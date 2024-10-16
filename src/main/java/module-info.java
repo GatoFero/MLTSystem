@@ -4,6 +4,8 @@ module com.mlbb.pruebas {
     requires static lombok;
 
 
-    opens com.mlbb.pruebas to javafx.fxml;
-    exports com.mlbb.pruebas;
+    opens com.mlbb.system to javafx.fxml;
+    exports com.mlbb.system;
+    exports com.mlbb.system.controllers;
+    opens com.mlbb.system.controllers to javafx.fxml;
 }

@@ -1,4 +1,4 @@
-package com.mlbb.pruebas.repository;
+package com.mlbb.system.repository;
 
 import lombok.Getter;
 

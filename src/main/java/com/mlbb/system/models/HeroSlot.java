@@ -1,6 +1,6 @@
-package com.mlbb.pruebas.models;
+package com.mlbb.system.models;
 
-import com.mlbb.pruebas.util.PathsResources;
+import com.mlbb.system.util.PathsResources;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import lombok.Getter;
@@ -21,8 +21,7 @@ public class HeroSlot {
         this.imageView.setFitWidth(140);
     }
 
-    public void heroPickSelect(String heroPick){
-        this.imageView.setImage(new Image(Objects.requireNonNull(getClass()
-                .getResourceAsStream(PathsResources.getPathPickHero(heroPick)))));
+    public void heroPickSelect(Image image){
+        this.imageView.setImage(image);
     }
 }

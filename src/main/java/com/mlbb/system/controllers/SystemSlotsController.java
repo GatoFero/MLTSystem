@@ -1,17 +1,14 @@
-package com.mlbb.pruebas;
+package com.mlbb.system.controllers;
 
-import com.mlbb.pruebas.models.HeroSlot;
-import com.mlbb.pruebas.repository.HeroesRepository;
+import com.mlbb.system.models.HeroSlot;
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.IntStream;
 
-public class HelloController {
+public class SystemSlotsController {
 
     @FXML
     private HBox teamBlueContain;
@@ -19,16 +16,13 @@ public class HelloController {
     private HBox teamRedContain;
 
     private List<HeroSlot> playerViews;
-    private final HeroesRepository heroesRepository = new HeroesRepository();
     private int countSlots = 0;
 
-    public void prueba(){
+    public void prueba(Image heroPick){
         int[] slots = {0,9,8,1,2,7,6,3,4,5};
         int slotSelect = slots[countSlots];
-        Random rand = new Random();
         playerViews.get(slotSelect)
-                .heroPickSelect(heroesRepository.getHero
-                        (rand.nextInt(heroesRepository.getHeroes().size())));
+                .heroPickSelect(heroPick);
         countSlots++;
     }
 

@@ -1,4 +1,4 @@
-package com.mlbb.pruebas.util;
+package com.mlbb.system.util;
 
 public interface PathsResources {
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
+      fx:controller="com.mlbb.system.controllers.DashboardHeroesController">
+    <FlowPane hgap="10" vgap="10" fx:id="flowPane">
+        <Button text="Open" fx:id="openSlotsButton" />
+    </FlowPane>
+</VBox>
