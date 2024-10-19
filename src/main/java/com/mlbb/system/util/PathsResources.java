@@ -1,16 +1,19 @@
 package com.mlbb.system.util;
 
+
 public interface PathsResources {
 
-    static String getPathButtonHero(String hero){
+    default String getPathButtonHero(String hero){
         return "/hero-buttons/" + hero + ".jpg";
     }
 
-    static String getPathPickHero(String hero){
-        return "/heroes/" + hero + ".jpg";
+    default String getPathPickHero(String hero){
+        return "/heroes/" + hero + ".gif";
     }
 
-    static String getPathPlayer(){
+    default String getPathPlayer(){
         return "/heroes/player.jpg";
     }
+
+    default String getPathPlayerRole(String role){ return "/roles/" + role + ".jpg"; }
 }

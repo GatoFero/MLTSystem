@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: com.mlbb.system.SystemPicksApplication
+Class-Path: javafx-controls-17.0.6.jar javafx-base-17.0.6.jar javafx-gra
+ phics-17.0.6-win.jar lombok-1.18.34.jar javafx-controls-17.0.6-win.jar 
+ javafx-base-17.0.6-win.jar javafx-fxml-17.0.6.jar javafx-fxml-17.0.6-wi
+ n.jar javafx-graphics-17.0.6.jar
+
