@@ -7,6 +7,7 @@ import com.mlbb.system.repository.HeroesRepository;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -32,14 +33,14 @@ public class DashboardController implements ViewController {
 
     @FXML
     public void initialize() {
-
         btnOpenStageSlots.setOnAction(actionEvent -> {
             Stage slotsStage = new Stage();
             slotsStage.initStyle(StageStyle.UNDECORATED);
-            double height = Screen.getPrimary().getBounds().getHeight();
+            double screenHeight = Screen.getPrimary().getBounds().getHeight();
             slotsStage.setWidth(Screen.getPrimary().getBounds().getWidth());
-            slotsStage.setY(height - height / 3);
-            slotsStage.setX(0);
+            slotsStage.setOnShown(event -> {
+                slotsStage.setY(screenHeight - slotsStage.getHeight());
+            });
             stageManagement = new StageManagement(slotsStage, View.SlotsView);
             setRenderSlots();
         });

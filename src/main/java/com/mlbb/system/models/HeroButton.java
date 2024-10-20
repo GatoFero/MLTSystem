@@ -21,7 +21,7 @@ public class HeroButton implements PathsResources {
     public HeroButton(String heroResource) {
         this.resource = heroResource;
         Image image = new Image(Objects.requireNonNull(getClass()
-                .getResourceAsStream(getPathButtonHero(this.resource))));
+                .getResourceAsStream(getPathButtonHero(heroResource))));
         this.imageView = new ImageView(image);
         this.imageView.setFitHeight(92);
         this.imageView.setFitWidth(120);

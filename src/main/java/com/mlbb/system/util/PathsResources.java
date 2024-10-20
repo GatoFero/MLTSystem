@@ -1,19 +1,24 @@
 package com.mlbb.system.util;
 
-
 public interface PathsResources {
 
     default String getPathButtonHero(String hero){
-        return "/hero-buttons/" + hero + ".jpg";
+        return "/heroes/buttons/" + hero + ".jpg";
     }
 
     default String getPathPickHero(String hero){
-        return "/heroes/" + hero + ".gif";
+        return "/heroes/slots/" + hero + ".gif";
     }
 
-    default String getPathPlayer(){
-        return "/heroes/player.jpg";
+    default String getPathPickBanHero(String hero){
+        return "/heroes/bans/" + hero + ".jpg";
     }
 
-    default String getPathPlayerRole(String role){ return "/roles/" + role + ".jpg"; }
+    default String getPathGenericResource(String resource){
+        return "/generics/fields/" + resource + ".jpg";
+    }
+
+    default String getPathPlayerRole(String role){
+        return "/generics/roles/" + role + ".jpg";
+    }
 }

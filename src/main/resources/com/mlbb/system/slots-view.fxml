@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
-<HBox xmlns:fx="http://javafx.com/fxml/1"
-      xmlns="http://javafx.com/javafx/23" fx:controller="com.mlbb.system.controllers.SlotsController"
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:id="contentTeams"
+      xmlns="http://javafx.com/javafx/23" fx:controller="com.mlbb.system.controllers.GamePicksController"
       style="-fx-background-color: #333030;"
       spacing="10" alignment="BOTTOM_CENTER">
-    <HBox spacing="2" fx:id="teamBlueContain"/>
-    <Region HBox.hgrow="ALWAYS"/>
-    <HBox spacing="2" fx:id="teamRedContain"/>
 </HBox>
